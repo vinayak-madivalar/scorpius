@@ -1,5 +1,8 @@
 export const data = {
-  navigation: ["Features", "Integration", "Privacy"],
+  navigation: {
+    logo_text: "Scorpius",
+    links: ["Features", "Integration", "Privacy"],
+  },
   hero: {
     banner: "What’s new: Unified publishing & analytics in one dashboard",
     title: "AI-Driven Social Media Management",
@@ -36,7 +39,7 @@ export const data = {
   ],
 
   footer: {
-    copyright: "Scorpius © 2025.",
+    copyright: " © 2025.",
     links: ["Features", "Integration", "Privacy"],
   },
 };

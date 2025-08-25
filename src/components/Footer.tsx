@@ -4,10 +4,13 @@ import { BsInstagram, BsLinkedin, BsTwitterX } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="max-w-6xl px-6 mx-auto py-10 border-t border-neutral-400">
+    <footer className="max-w-6xl px-6 mx-auto py-10 border-t border-neutral-300">
       <div className="flex justify-between items-center ">
-        <div className="font-manrope font-medium text-lg">
-          <h3>{data.footer.copyright}</h3>
+        <div className="font-manrope">
+          <h3>
+            <span className="font-medium">{data.navigation.logo_text}</span>
+            {data.footer.copyright}
+          </h3>
         </div>
         <div className="flex items-center space-x-12">
           {data.footer.links.map((item) => (

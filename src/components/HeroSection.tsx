@@ -20,8 +20,8 @@ const HeroSection = () => {
           </p>
         </div>
         <div className="flex gap-4">
-          <button className="flex items-center gap-2 bg-foreground text-background relative px-8 py-2 border border-neutral-700 cursor-pointer font-medium rounded-full text-sm hover:scale-105 hover:shadow-2xl shadow-sky-400 hover:-translate-y-1 transition-all duration-200">
-            <div className="absolute -bottom-px inset-x-0 w-full h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
+          <button className="flex items-center gap-2 bg-foreground text-background relative px-8 py-2 border border-neutral-700 cursor-pointer font-medium rounded-full text-sm  hover:shadow-2xl shadow-amber-400 hover:-translate-y-1.5 transition-all duration-200">
+            <div className="absolute -bottom-px inset-x-0 w-full h-px bg-gradient-to-r from-transparent via-amber-400 to-transparent"></div>
             {data.hero.cta} <FaArrowRightToBracket size={15} />
           </button>
         </div>
