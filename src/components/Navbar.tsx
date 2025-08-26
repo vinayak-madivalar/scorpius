@@ -1,11 +1,13 @@
 import { data } from "@/lib/data";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
     <header className="flex justify-center pt-4">
-      <nav className="flex justify-between items-center w-[75vw] py-2 px-6">
+      <nav className="flex justify-between items-center w-[75vw] py-2 ">
         <div>
-          <span className="text-[1.6rem] font-semibold uppercase tracking-tight font-manrope">
+          <span className="flex items-center gap-2 text-3xl font-medium tracking-tight font-manrope">
+            <Image src="/logo.png" alt="logo" width={35} height={35} />
             {data.navigation.logo_text}
           </span>
         </div>
@@ -20,8 +22,8 @@ const Navbar = () => {
             </a>
           ))}
         </div>
-        <button className="relative px-8 py-2 text-sm border border-neutral-700 cursor-pointer font-medium rounded-full">
-          <div className="absolute -bottom-px inset-x-0 w-full h-px bg-gradient-to-r from-transparent via-amber-400 to-transparent "></div>
+        <button className="relative px-8 py-2 text-sm border border-neutral-700 cursor-pointer font-medium rounded-full  hover:-translate-y-1 transition duration-200">
+          <div className="absolute inset-x-0 -bottom-px w-full h-px bg-gradient-to-r from-transparent via-amber-400 to-transparent "></div>
           Join Waitlist
         </button>
       </nav>
