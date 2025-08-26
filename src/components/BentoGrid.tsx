@@ -6,7 +6,7 @@ const Bento = () => {
       <div className="mx-auto mb-10 max-w-2xl">
         <h2 className="text-5xl font-manrope font-medium tracking-tight text-center leading-snug">
           Everything you need to dominate <br />
-          <span className="bg-clip-text text-transparent bg-gradient-to-b from-amber-300 via-amber-400 to-amber-500">
+          <span className="bg-clip-text text-transparent bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600">
             Social Media
           </span>
         </h2>

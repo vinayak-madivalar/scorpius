@@ -12,7 +12,7 @@ const HeroSection = () => {
           </span>
         </div>
         <div className="flex justify-center items-center font-manrope gap-5 flex-col">
-          <h1 className="text-7xl text-center max-w-3xl  font-medium tracking-tight">
+          <h1 className="text-7xl text-center max-w-3xl  font-medium tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600">
             {data.hero.title}
           </h1>
           <p className="max-w-2xl text-muted-foreground text-lg text-center">
