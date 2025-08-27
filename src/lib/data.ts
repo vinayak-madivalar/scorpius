@@ -38,6 +38,27 @@ export const data = {
     },
   ],
 
+  howItWorks: [
+    {
+      img_id: "number-1.png",
+      title: "Connect Accounts",
+      subtitle:
+        "Link your social platforms like Facebook, Instagram, Twitter, and LinkedIn with ease.",
+    },
+    {
+      img_id: "number-2.png",
+      title: "Let AI Do the Work",
+      subtitle:
+        "Our engine analyzes trends, audience activity, and competitors to give you smart posting suggestions and automation.",
+    },
+    {
+      img_id: "number-3.png",
+      title: "Automate & Grow",
+      subtitle:
+        "Publish content, track performance, and watch engagement climb — all while you focus on creating.",
+    },
+  ],
+
   footer: {
     copyright: " © 2025.",
     links: ["Features", "Integration", "Privacy"],
