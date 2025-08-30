@@ -1,10 +1,15 @@
 import { data } from "@/lib/data";
+import BadgeButton from "./ui/BadgeButton";
+import { RiFlashlightFill } from "react-icons/ri";
 
 const Bento = () => {
   return (
     <section className="max-w-6xl mx-auto px-6 py-16">
       <div className="mx-auto mb-10 max-w-2xl">
-        <h2 className="text-5xl font-manrope font-medium tracking-tight text-center leading-snug">
+        <div className="flex items-center justify-center mb-4">
+          <BadgeButton label="Features" icon={RiFlashlightFill} />
+        </div>
+        <h2 className="text-5xl font-manrope font-medium tracking-tight text-center ">
           Everything you need to dominate <br />
           <span className="bg-clip-text text-transparent bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600">
             Social Media

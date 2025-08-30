@@ -1,9 +1,12 @@
 import React from "react";
+import BadgeButton from "./ui/BadgeButton";
+import { RiFlashlightFill } from "react-icons/ri";
 
 const TrustedBy = () => {
   return (
     <div className="py-16">
-      <div className="flex items-center justify-center mb-14">
+      <div className="flex flex-col items-center justify-center gap-4 mb-14">
+        <BadgeButton label="Trusted Brands" icon={RiFlashlightFill} />
         <h1 className="text-5xl font-manrope font-medium tracking-tight text-center">
           Partnered with the Best in <br />
           <span className="bg-clip-text text-transparent bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600 ">

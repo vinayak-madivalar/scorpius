@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
+import { RiFlashlightFill } from "react-icons/ri";
+import BadgeButton from "./ui/BadgeButton";
 
 interface FaqItem {
   question: string;
@@ -14,21 +16,18 @@ const faqItems: FaqItem[] = [
     answer: "Yes, you can cancel or change plans whenever you need.",
   },
   {
-    question: "Do you offer a free trial?",
-    answer: "Yes, every plan includes a 14-day free trial.",
-  },
-  {
     question: "Which platforms are supported?",
     answer: "Facebook, Instagram, LinkedIn, Twitter (X), and more.",
-  },
-  {
-    question: "Is it suitable for large teams?",
-    answer: "Absolutely, roles & permissions make collaboration easy.",
   },
   {
     question: "What makes this tool different from others?",
     answer:
       "We combine intuitive design with powerful automation, making it effortless for individuals and teams to scale their social presence.",
+  },
+  {
+    question: "Are there limits on the number of accounts I can manage?",
+    answer:
+      "There are no limits on the number of accounts you can manage. We offer various plans that allow you to add accounts based on your business needs, from individual users to large enterprises.",
   },
   {
     question: "Do you provide analytics & reporting?",
@@ -39,11 +38,6 @@ const faqItems: FaqItem[] = [
     question: "Can I schedule posts in advance?",
     answer:
       "Absolutely! Plan and schedule your content weeks ahead with our calendar view.",
-  },
-  {
-    question: "How many accounts can I connect?",
-    answer:
-      "You can connect multiple accounts across platforms—perfect for managing all your brands from one dashboard.",
   },
 ];
 
@@ -69,17 +63,20 @@ const FAQSection = () => {
 
   return (
     <div className="py-14">
-      <div className="flex flex-col justify-center items-center gap-2 mb-10">
-        <h1 className="text-5xl font-manrope font-medium tracking-tight">
-          Frequently Asked{" "}
-          <span className="bg-clip-text text-transparent bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600">
-            Questions
-          </span>
-        </h1>
-        <p className="text-muted-foreground ">
-          Everything you need to know about our AI-powered social media
-          management tool
-        </p>
+      <div className="flex flex-col justify-center items-center gap-5 mb-10">
+        <BadgeButton label="FAQ" icon={RiFlashlightFill} />
+        <div className="flex flex-col justify-center items-center gap-2">
+          <h1 className="text-5xl font-manrope font-medium tracking-tight">
+            Frequently Asked{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600">
+              Questions
+            </span>
+          </h1>
+          <p className="text-muted-foreground ">
+            Everything you need to know about our AI-powered social media
+            management tool
+          </p>
+        </div>
       </div>
       <div className="max-w-3xl mx-auto">
         <div className="flex flex-col flex-1 items-start justify-center gap-8 w-full">
