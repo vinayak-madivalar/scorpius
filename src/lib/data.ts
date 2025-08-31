@@ -59,6 +59,13 @@ export const data = {
     },
   ],
 
+  final_CTA: {
+    title: "Ready to Automate Your Social Media?",
+    subtitle:
+      "Stop wasting hours juggling posts and reports. Let AI streamline your workflow, boost your reach, and help you grow - all from one dashboard.",
+    link: "#",
+  },
+
   footer: {
     copyright: " © 2025.",
     links: ["Features", "Integration", "Privacy"],
