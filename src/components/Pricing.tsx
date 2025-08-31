@@ -34,7 +34,7 @@ const Pricing = () => {
               $29<span className="text-base font-normal">/month</span>
             </p>
             <p className=" text-sm">save 20% when billed annually</p>
-            <button className="my-10 w-full bg-neutral-100 rounded-lg py-2 hover:bg-neutral-200">
+            <button className="my-10 w-full bg-neutral-100 shadow-md border border-neutral-100 rounded-lg py-2 cursor-pointer hover:bg-neutral-200">
               Get Started
             </button>
             <p className=" font-medium mb-4">
@@ -66,7 +66,7 @@ const Pricing = () => {
 
           {/* Professional Plan */}
           <div className="border border-neutral-200 rounded-2xl p-6 shadow-md scale-105 flex flex-col relative z-10">
-            <div className="absolute top-0 right-0 w-full h-60 overflow-hidden bg-gradient-to-bl from-orange-300/40 from-5% via-transparent to-transparent rounded-2xl -z-0"></div>
+            <div className="absolute top-0 right-0 w-full h-60 overflow-hidden bg-gradient-to-bl from-orange-300/40 from-5% via-transparent to-transparent rounded-2xl -z-10"></div>
             <h3 className="flex items-center gap-4 text-lg font-manrope font-medium mt-4 mb-6">
               Professional Plan{" "}
               <span className="text-xs rounded-full bg-amber-500 text-white px-3 py-0.5">
@@ -78,7 +78,7 @@ const Pricing = () => {
               $79<span className="text-base font-normal">/month</span>
             </p>
             <p className=" text-sm">save 20% when billed annually</p>
-            <button className="my-10 w-full text-white bg-gradient-to-b from-orange-200 via-orange-300 to-orange-400 rounded-lg py-2 hover:bg-black/75">
+            <button className="my-10 cursor-pointer w-full text-white bg-gradient-to-b from-orange-200 via-orange-300 to-orange-400 rounded-lg py-2  hover:bg-black/75">
               Get Started
             </button>
             <p className="font-medium mb-4">
@@ -115,7 +115,7 @@ const Pricing = () => {
             </h3>
             <p className="text-5xl font-medium mb-2">Custom</p>
             <p className=" text-sm">save 20% when billed annually</p>
-            <button className="my-10 w-full bg-neutral-100 rounded-lg py-2 hover:bg-neutral-200">
+            <button className="my-10 w-full bg-neutral-100 shadow-md border border-neutral-100 rounded-lg py-2 cursor-pointer hover:bg-neutral-200">
               Get Started
             </button>
             <p className="font-medium mb-4">
