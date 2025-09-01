@@ -10,8 +10,8 @@ const Bento = () => {
         <div className="flex items-center justify-center mb-4">
           <BadgeButton label="Features" icon={RiFlashlightFill} />
         </div>
-        <h2 className="text-5xl font-manrope font-medium tracking-tight text-center ">
-          Everything you need to dominate <br />
+        <h2 className="text-4xl sm:text-5xl font-manrope font-medium tracking-tight text-center ">
+          Everything you need to dominate{" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600">
             Social Media
           </span>
@@ -19,7 +19,7 @@ const Bento = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-        <div className="relative col-span-2 row-span-1 rounded-2xl px-8 py-8 shadow-sm border border-neutral-200 hover:-translate-y-1 hover:shadow-2xl hover:scale-105 transition-all duration-200">
+        <div className="relative md:col-span-2 md:row-span-1 rounded-2xl px-8 py-8 shadow-sm border border-neutral-200 hover:-translate-y-1 hover:shadow-2xl hover:scale-105 transition-all duration-200">
           {/* <div className="absolute top-0 right-0 w-full h-full overflow-hidden bg-gradient-to-bl from-orange-100 from-5% via-transparent to-transparent rounded-2xl -z-10"></div> */}
           <Image
             src="/dashboard.png"

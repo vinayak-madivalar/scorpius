@@ -9,13 +9,13 @@ const Pricing = () => {
       <div className="flex flex-col justify-center items-center gap-5 mb-14">
         <BadgeButton label="Join us Today" icon={RiFlashlightFill} />
         <div className=" flex flex-col justify-center items-center gap-4">
-          <h1 className="text-5xl font-manrope font-medium tracking-tight text-center">
+          <h1 className="text-3xl md:text-5xl font-manrope font-medium tracking-tight text-center">
             Flexible Pricing Plans to Suit <br />{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600">
               Every Business
             </span>
           </h1>
-          <p className="text-muted-foreground max-w-2xl text-center">
+          <p className="text-muted-foreground max-w-2xl text-sm sm:text-base text-center">
             Whether your an individual or a large enterprise, we have pricing
             designed for you. Enjoy scalable options that grow with your
             business.
@@ -24,9 +24,9 @@ const Pricing = () => {
       </div>
 
       <div className="max-w-5xl mx-auto">
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-6">
           {/* Individual plan */}
-          <div className="border border-neutral-200 rounded-2xl p-6 shadow-md flex flex-col">
+          <div className=" border border-neutral-200 rounded-2xl p-6 shadow-md flex flex-col">
             <h3 className="text-lg font-manrope font-medium mt-4 mb-6">
               Basic Plan
             </h3>
@@ -65,7 +65,7 @@ const Pricing = () => {
           </div>
 
           {/* Professional Plan */}
-          <div className="border border-neutral-200 rounded-2xl p-6 shadow-md scale-105 flex flex-col relative z-10">
+          <div className="border border-neutral-200 rounded-2xl p-6 shadow-md lg:scale-105 flex flex-col relative z-10">
             <div className="absolute top-0 right-0 w-full h-60 overflow-hidden bg-gradient-to-bl from-orange-300/40 from-5% via-transparent to-transparent rounded-2xl -z-10"></div>
             <h3 className="flex items-center gap-4 text-lg font-manrope font-medium mt-4 mb-6">
               Professional Plan{" "}

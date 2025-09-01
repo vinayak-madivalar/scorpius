@@ -10,13 +10,13 @@ const HowItWorks = () => {
       <div className="flex flex-col items-center justify-center gap-4">
         <BadgeButton label="Quick & Easy" icon={RiFlashlightFill} />
         <div className="flex flex-col justify-center gap-2 items-center mb-10">
-          <h1 className="text-5xl font-manrope font-medium tracking-tight text-center ">
+          <h1 className="text-4xl md:text-5xl font-manrope font-medium tracking-tight text-center ">
             How It{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600">
               Works
             </span>
           </h1>
-          <p className="max-w-xl text-center text-muted-foreground">
+          <p className="max-w-xl text-sm md:text-base text-center text-muted-foreground">
             Easily link your platforms, organize content in one place, and let
             automation handle posting across channels.
           </p>
@@ -35,13 +35,16 @@ const HowItWorks = () => {
                   alt="number"
                   width={45}
                   height={45}
+                  className="w-8 sm:w-10 lg:w-12"
                 />
               </div>
               <div className="py-6">
-                <h3 className="text-2xl font-manrope font-semibold tracking-tight mb-2">
+                <h3 className="text-xl md:text-2xl font-manrope font-semibold tracking-tight mb-2">
                   {item.title}
                 </h3>
-                <p className="text-muted-foreground  text-s">{item.subtitle}</p>
+                <p className="text-muted-foreground text-sm md:text-base">
+                  {item.subtitle}
+                </p>
               </div>
             </div>
           ))}

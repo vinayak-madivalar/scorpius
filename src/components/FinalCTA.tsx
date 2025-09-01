@@ -21,10 +21,12 @@ const FinalCTA = () => {
       <div className="py-20 max-w-6xl mx-auto rounded-2xl ">
         <div className="flex flex-col items-center gap-12">
           <div className="flex flex-col items-center gap-4">
-            <h1 className="text-5xl font-manrope font-medium tracking-tight max-w-4xl text-center">
+            <h1 className="text-4xl md:text-5xl font-manrope font-medium tracking-tight max-w-4xl text-center">
               {data.final_CTA.title}
             </h1>
-            <p className="max-w-2xl text-center">{data.final_CTA.subtitle}</p>
+            <p className="max-w-2xl text-center px-2">
+              {data.final_CTA.subtitle}
+            </p>
           </div>
 
           <Link href={data.final_CTA.link}>

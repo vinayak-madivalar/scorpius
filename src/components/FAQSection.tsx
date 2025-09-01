@@ -65,21 +65,21 @@ const FAQSection = () => {
     <div className="py-14">
       <div className="flex flex-col justify-center items-center gap-5 mb-10">
         <BadgeButton label="FAQ" icon={RiFlashlightFill} />
-        <div className="flex flex-col justify-center items-center gap-2">
-          <h1 className="text-5xl font-manrope font-medium tracking-tight">
+        <div className="flex flex-col justify-center items-center gap-2 px-6 md:px-0">
+          <h1 className="text-4xl md:text-5xl font-manrope font-medium tracking-tight text-center">
             Frequently Asked{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600">
               Questions
             </span>
           </h1>
-          <p className="text-muted-foreground ">
+          <p className="text-muted-foreground text-center">
             Everything you need to know about our AI-powered social media
             management tool
           </p>
         </div>
       </div>
       <div className="max-w-3xl mx-auto">
-        <div className="flex flex-col flex-1 items-start justify-center gap-8 w-full">
+        <div className="flex flex-col flex-1 items-start justify-center gap-8 w-full px-4">
           {faqItems.map((item, index) => {
             const isOpen = activeQuestion === index;
 

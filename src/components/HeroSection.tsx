@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <div className="mx-auto">
       <div className="flex justify-center items-center flex-col gap-10 py-20">
-        <div className=" group bg-muted text-muted-foreground text-sm cursor-pointer px-6 py-1 rounded-full">
+        <div className=" group bg-muted text-muted-foreground max-[375px]:text-[8px] max-[400px]:text-[10px] text-xs sm:text-sm cursor-pointer px-6 py-1 rounded-full">
           <span className="flex items-center gap-1">
             {data.hero.banner}{" "}
             <FaArrowRight
@@ -16,10 +16,10 @@ const HeroSection = () => {
           </span>
         </div>
         <div className="flex justify-center items-center font-manrope gap-5 flex-col">
-          <h1 className="text-7xl text-center max-w-3xl font-medium tracking-tight bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600 text-transparent bg-clip-text py-1">
+          <h1 className="sm:text-7xl text-5xl text-center max-w-3xl font-medium tracking-tight bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600 text-transparent bg-clip-text py-1">
             {data.hero.title}
           </h1>
-          <p className="max-w-2xl text-muted-foreground text-lg text-center">
+          <p className="max-w-2xl text-muted-foreground text-base md:text-lg text-center">
             {data.hero.subtitle}
           </p>
         </div>

@@ -4,15 +4,15 @@ import { MdOutlineDarkMode } from "react-icons/md";
 
 const Navbar = () => {
   return (
-    <header className="flex justify-center pt-4">
-      <nav className="flex justify-between items-center w-[75vw] py-2 ">
+    <header className="flex justify-center w-full pt-4">
+      <nav className="flex justify-between items-center max-sm:w-full w-[75vw] py-2 px-4">
         <div>
           <span className="flex items-center gap-2 text-3xl font-medium tracking-tight font-manrope">
             <Image src="/logo.png" alt="logo" width={35} height={35} />
             {data.navigation.logo_text}
           </span>
         </div>
-        <div className="flex space-x-14 items-center font-medium ">
+        <div className="hidden md:flex sm:space-x-8 lg:space-x-14 items-center font-medium ">
           {data.navigation.links.map((item) => (
             <a
               href={`#${item.toLowerCase()}`}
