@@ -1,5 +1,6 @@
 import BentoGrid from "@/components/BentoGrid";
 import FAQSection from "@/components/FAQSection";
+import FinalCTA from "@/components/FinalCTA";
 import HeroSection from "@/components/HeroSection";
 import HowItWorks from "@/components/HowItWorks";
 import Pricing from "@/components/Pricing";
@@ -14,6 +15,7 @@ export default function Home() {
       <TrustedBy />
       <Pricing />
       <FAQSection />
+      <FinalCTA />
     </div>
   );
 }

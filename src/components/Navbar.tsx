@@ -1,5 +1,6 @@
 import { data } from "@/lib/data";
 import Image from "next/image";
+import { MdOutlineDarkMode } from "react-icons/md";
 
 const Navbar = () => {
   return (
@@ -22,9 +23,8 @@ const Navbar = () => {
             </a>
           ))}
         </div>
-        <button className="relative px-8 py-2 text-sm border border-neutral-700 cursor-pointer font-medium rounded-full  hover:-translate-y-1 transition duration-200">
-          <div className="absolute inset-x-0 -bottom-px w-full h-px bg-gradient-to-r from-transparent via-amber-400 to-transparent "></div>
-          Join Waitlist
+        <button className="relative px-6 py-3 text-sm border border-neutral-400 shadow-md bg-neutral-50 hover:bg-neutral-100 cursor-pointer font-medium rounded-full">
+          <MdOutlineDarkMode size={20} />
         </button>
       </nav>
     </header>

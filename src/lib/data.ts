@@ -12,29 +12,29 @@ export const data = {
   },
   features: [
     {
-      title: "Advanced Analytics",
+      title: "Advanced analytics",
       description:
-        "Track engagement, reach, and performance with in-depth analytics and visual reports. Discover what's working, optimize campaigns, and prove ROI effortlessly.",
+        "Get deep insights with visual reports to optimize campaigns and prove ROI.",
     },
     {
       title: "Team Collaboration",
       description:
-        "Collaborate seamlessly by assigning roles, sharing approvals, and keeping your entire workflow organized.",
+        "Work together with roles, approvals, and an organized workflow.",
     },
     {
       title: "Multi-Platform Publishing",
       description:
-        "Publish content across Facebook, Instagram, Twitter, LinkedIn, and more. Save time by managing everything in one place.",
+        "Post to Facebook, Instagram, Twitter, LinkedIn, and more from one place.",
     },
     {
       title: "Smart Scheduling",
       description:
-        "Schedule posts across multiple platforms with intelligent timing suggestions that boost reach and engagement. Take the guesswork out of publishing with data-driven recommendations.",
+        "Plan posts with AI timing suggestions to maximize reach and engagement.",
     },
     {
       title: "Social Listening",
       description:
-        "Monitor mentions, comments, and conversations about your brand in real time. Stay connected, respond faster, and never miss an opportunity to engage.",
+        "Track mentions and conversations in real time to engage faster.",
     },
   ],
 
