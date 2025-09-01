@@ -27,17 +27,17 @@ const HowItWorks = () => {
           {data.howItWorks.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-start py-4 px-6 border border-neutral-200 rounded-2xl shadow-md"
+              className="flex flex-col items-start py-4 px-6 border border-neutral-200 rounded-2xl shadow-md bg-gradient-to-b from-transparent via-orange-50 to-transparent"
             >
-              <div className="pt-4">
+              <div className="pt-6">
                 <Image
                   src={`/${item.img_id}`}
                   alt="number"
-                  width={40}
-                  height={40}
+                  width={45}
+                  height={45}
                 />
               </div>
-              <div className="py-4">
+              <div className="py-6">
                 <h3 className="text-2xl font-manrope font-semibold tracking-tight mb-2">
                   {item.title}
                 </h3>
