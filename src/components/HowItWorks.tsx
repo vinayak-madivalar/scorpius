@@ -23,11 +23,11 @@ const HowItWorks = () => {
         </div>
       </div>
       <div className="max-w-6xl px-6 mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-10">
           {data.howItWorks.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-start py-4 px-6 border border-neutral-200 rounded-2xl shadow-md bg-gradient-to-b from-transparent via-orange-50 to-transparent"
+              className="flex flex-col items-start max-w-xl py-4 px-6 border border-muted rounded-2xl shadow-md"
             >
               <div className="pt-6">
                 <Image

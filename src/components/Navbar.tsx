@@ -1,8 +1,23 @@
+"use client";
+
 import { data } from "@/lib/data";
 import Image from "next/image";
-import { MdOutlineDarkMode } from "react-icons/md";
+import { useTheme } from "next-themes";
+import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const { setTheme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
   return (
     <header className="flex justify-center w-full pt-4">
       <nav className="flex justify-between items-center max-sm:w-full w-[75vw] py-2 px-4">
@@ -23,8 +38,15 @@ const Navbar = () => {
             </a>
           ))}
         </div>
-        <button className="relative px-6 py-3 text-sm border border-neutral-400 shadow-md bg-neutral-50 hover:bg-neutral-100 cursor-pointer font-medium rounded-full">
-          <MdOutlineDarkMode size={20} />
+        <button
+          className="relative px-6 py-3 text-sm border border-neutral-400 shadow-md bg-amber-400 cursor-pointer font-medium rounded-full"
+          onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+        >
+          {resolvedTheme === "dark" ? (
+            <MdOutlineLightMode size={20} />
+          ) : (
+            <MdOutlineDarkMode size={20} />
+          )}
         </button>
       </nav>
     </header>

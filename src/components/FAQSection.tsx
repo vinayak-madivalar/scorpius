@@ -86,7 +86,7 @@ const FAQSection = () => {
             return (
               <div
                 key={index}
-                className="w-full shadow-md border border-neutral-200 cursor-pointer rounded-xl px-6 py-5"
+                className="w-full shadow-md border border-muted cursor-pointer rounded-xl px-6 py-5"
                 onClick={() => {
                   toggleOpen(index);
                 }}

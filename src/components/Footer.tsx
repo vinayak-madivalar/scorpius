@@ -4,7 +4,7 @@ import { BsInstagram, BsLinkedin, BsTwitterX } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="max-w-6xl px-6 mx-auto py-10 border-t border-neutral-300">
+    <footer className="max-w-6xl px-6 mx-auto py-10 border-t border-muted">
       <div className="flex flex-col md:flex-row justify-between items-center gap-4">
         <div className="font-manrope">
           <h3>
