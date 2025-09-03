@@ -68,9 +68,7 @@ const FAQSection = () => {
         <div className="flex flex-col justify-center items-center gap-2 px-6 md:px-0">
           <h1 className="text-4xl md:text-5xl font-manrope font-medium tracking-tight text-center">
             Frequently Asked{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600">
-              Questions
-            </span>
+            <span className="text-gradient-primary">Questions</span>
           </h1>
           <p className="text-muted-foreground text-center">
             Everything you need to know about our AI-powered social media
@@ -93,7 +91,7 @@ const FAQSection = () => {
               >
                 <div className={`flex items-center justify-between `}>
                   <h3 className="font-medium text-lg">{item.question}</h3>
-                  <span className="transition duration-500">
+                  <span className="transition duration-400">
                     {activeQuestion === index ? (
                       <IoIosArrowUp size={20} />
                     ) : (
@@ -115,7 +113,7 @@ const FAQSection = () => {
                   }}
                 >
                   <div
-                    className={`text-muted-foreground max-w-2xl transition-transform duration-300 pt-4 `}
+                    className={`text-muted-foreground max-w-2xl transition-transform duration-400 pt-4 `}
                   >
                     <p>{item.answer}</p>
                   </div>

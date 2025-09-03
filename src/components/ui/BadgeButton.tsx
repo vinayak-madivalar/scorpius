@@ -15,7 +15,7 @@ const BadgeButton: React.FC<BadgeButtonProps> = ({
   return (
     <div className=" rounded-full">
       <span
-        className={`flex items-center gap-1 font-manrope font-medium text-xs sm:text-sm shadow-md border border-orange-300 rounded-full px-4 py-0.5 bg-clip-text text-transparent bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600 ${className}`}
+        className={`flex items-center gap-1 font-manrope font-medium text-xs sm:text-sm shadow-md border border-orange-300 rounded-full px-4 py-0.5 text-gradient-primary ${className}`}
       >
         {Icon && <Icon size={15} color="orange" />}
         {label}

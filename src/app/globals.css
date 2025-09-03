@@ -16,6 +16,30 @@
   --color-muted-foreground: var(--muted-foreground);
 }
 
+@layer base {
+  :root {
+    --gradient-primary: linear-gradient(
+      to bottom,
+      oklch(83.7% 0.128 66.29),
+      oklch(75% 0.183 55.934),
+      oklch(70.5% 0.213 47.604)
+    );
+  }
+}
+
+@layer utilities {
+  .bg-gradient-primary {
+    background-image: var(--gradient-primary);
+  }
+
+  .text-gradient-primary {
+    background-image: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
 :root {
   --background: oklch(98.5% 0.002 247.839);
   --foreground: oklch(21% 0.034 264.665);

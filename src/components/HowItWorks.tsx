@@ -11,10 +11,7 @@ const HowItWorks = () => {
         <BadgeButton label="Quick & Easy" icon={RiFlashlightFill} />
         <div className="flex flex-col justify-center gap-2 items-center mb-10">
           <h1 className="text-4xl md:text-5xl font-manrope font-medium tracking-tight text-center ">
-            How It{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600">
-              Works
-            </span>
+            How It <span className="text-gradient-primary">Works</span>
           </h1>
           <p className="max-w-xl text-sm md:text-base text-center text-muted-foreground">
             Easily link your platforms, organize content in one place, and let

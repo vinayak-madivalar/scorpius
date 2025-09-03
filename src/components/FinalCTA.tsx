@@ -31,7 +31,7 @@ const FinalCTA = () => {
 
           <Link href={data.final_CTA.link}>
             <button className="group flex items-center gap-1 bg-foreground text-background relative px-10 py-3 border border-neutral-700 cursor-pointer font-medium rounded-full text-base hover:scale-105 transform transition-transform duration-300">
-              <div className="absolute -bottom-px inset-x-0 w-full h-px bg-gradient-to-r from-transparent via-amber-400 to-transparent"></div>
+              <div className="absolute -bottom-px inset-x-0 w-full h-px bg-gradient-to-r from-transparent via-orange-400 to-transparent"></div>
               Start your free trial{" "}
               <FiArrowUpRight
                 size={20}
@@ -40,7 +40,6 @@ const FinalCTA = () => {
             </button>
           </Link>
         </div>
-        {/* <div className="absolute -z-10 bottom-0 bg-gradient-to-t from-orange-300 via-orange-100 to-transparent w-full h-40 rounded-2xl"></div> */}
       </div>
     </div>
   );

@@ -11,9 +11,7 @@ const Pricing = () => {
         <div className=" flex flex-col justify-center items-center gap-4">
           <h1 className="text-3xl md:text-5xl font-manrope font-medium tracking-tight text-center">
             Flexible Pricing Plans to Suit <br />{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600">
-              Every Business
-            </span>
+            <span className="text-gradient-primary">Every Business</span>
           </h1>
           <p className="text-muted-foreground max-w-2xl text-sm sm:text-base text-center">
             Whether your an individual or a large enterprise, we have pricing
@@ -38,10 +36,7 @@ const Pricing = () => {
               Get Started
             </button>
             <p className=" font-medium mb-4">
-              What&#39;s{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600">
-                included
-              </span>
+              What&#39;s <span className="text-gradient-primary">included</span>
               :
             </p>
             <ul className="space-y-2 flex-1 mb-8 text-muted-foreground">
@@ -69,7 +64,7 @@ const Pricing = () => {
             <div className="absolute top-0 right-0 w-full h-60 overflow-hidden bg-gradient-to-bl from-orange-300/40 from-5% via-transparent to-transparent rounded-2xl -z-10"></div>
             <h3 className="flex items-center gap-4 text-lg font-manrope font-medium mt-4 mb-6">
               Professional Plan{" "}
-              <span className="text-xs rounded-full bg-amber-500 text-white px-3 py-0.5">
+              <span className="text-xs rounded-full bg-orange-500 text-white px-3 py-0.5">
                 Popular{" "}
               </span>
             </h3>
@@ -78,14 +73,11 @@ const Pricing = () => {
               $79<span className="text-base font-normal">/month</span>
             </p>
             <p className=" text-sm">save 20% when billed annually</p>
-            <button className="my-10 cursor-pointer w-full text-white bg-gradient-to-b from-orange-200 via-orange-300 to-orange-400 rounded-lg py-2">
+            <button className="my-10 cursor-pointer w-full text-white bg-gradient-primary rounded-lg py-2">
               Get Started
             </button>
             <p className="font-medium mb-4">
-              Everything in{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600">
-                Basic
-              </span>
+              Everything in <span className="text-gradient-primary">Basic</span>
               , plus:
             </p>
             <ul className="space-y-2 flex-1 mb-8 text-muted-foreground">
@@ -120,10 +112,7 @@ const Pricing = () => {
             </button>
             <p className="font-medium mb-4">
               Everything in{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600">
-                Professional
-              </span>
-              , plus:
+              <span className="text-gradient-primary">Professional</span>, plus:
             </p>
             <ul className="space-y-2 flex-1 mb-8 text-muted-foreground">
               <li className="flex items-center gap-2">

@@ -9,9 +9,7 @@ const TrustedBy = () => {
         <BadgeButton label="Trusted Brands" icon={RiFlashlightFill} />
         <h1 className="text-3xl md:text-5xl font-manrope font-medium tracking-tight text-center">
           Partnered with the Best in <br />
-          <span className="bg-clip-text text-transparent bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600 ">
-            the Business
-          </span>
+          <span className="text-gradient-primary">the Business</span>
         </h1>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-center px-4 gap-12">

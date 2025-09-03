@@ -39,7 +39,7 @@ const Navbar = () => {
           ))}
         </div>
         <button
-          className="relative px-6 py-3 text-sm border border-neutral-400 shadow-md bg-amber-400 cursor-pointer font-medium rounded-full"
+          className="relative px-6 py-3 text-sm border border-neutral-200 shadow-md bg-gradient-primary cursor-pointer font-medium rounded-full"
           onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
         >
           {resolvedTheme === "dark" ? (

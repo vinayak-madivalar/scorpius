@@ -12,15 +12,12 @@ const Bento = () => {
         </div>
         <h2 className="text-4xl sm:text-5xl font-manrope font-medium tracking-tight text-center ">
           Everything you need to dominate{" "}
-          <span className="bg-clip-text text-transparent bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600">
-            Social Media
-          </span>
+          <span className="text-gradient-primary">Social Media</span>
         </h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
         <div className="relative md:col-span-2 md:row-span-1 rounded-2xl px-6 py-6 shadow-sm border border-neutral-200 dark:border-muted">
-          {/* <div className="absolute top-0 right-0 w-full h-full overflow-hidden bg-gradient-to-bl from-orange-100 from-5% via-transparent to-transparent rounded-2xl -z-10"></div> */}
           <Image
             src="/dashboard.png"
             alt="analytics"
@@ -37,7 +34,6 @@ const Bento = () => {
         </div>
 
         <div className="relative rounded-2xl p-6 shadow-sm border border-neutral-200 dark:border-muted">
-          {/* <div className="absolute top-0 right-0 w-full h-full overflow-hidden bg-gradient-to-tl from-orange-100 from-5% via-transparent to-transparent rounded-2xl -z-10"></div> */}
           <h3 className="text-xl font-manrope font-medium">
             {data.features[1].title}
           </h3>
@@ -47,7 +43,6 @@ const Bento = () => {
         </div>
 
         <div className="relative rounded-2xl p-6 shadow-sm border border-neutral-200 dark:border-muted">
-          {/* <div className="absolute top-0 right-0 w-full h-full overflow-hidden bg-gradient-to-tr from-orange-100 from-5% via-transparent to-transparent rounded-2xl -z-10"></div> */}
           <h3 className="text-xl font-manrope font-medium">
             {data.features[2].title}
           </h3>
@@ -57,8 +52,6 @@ const Bento = () => {
         </div>
 
         <div className="relative  rounded-2xl p-6 flex flex-col justify-between shadow-sm border border-neutral-200 dark:border-muted">
-          {/* <div className="absolute top-0 right-0 w-full h-full overflow-hidden bg-gradient-to-br from-transparent via-orange-100 via-60% to-transparent rounded-2xl -z-10"></div> */}
-
           <div>
             <h3 className="text-xl font-manrope font-medium">
               {data.features[3].title}
@@ -70,7 +63,6 @@ const Bento = () => {
         </div>
 
         <div className="relative rounded-2xl p-6 shadow-sm border border-neutral-200 dark:border-muted">
-          {/* <div className="absolute top-0 right-0 w-full h-full overflow-hidden bg-radial from-transparent via-orange-100 via-40% to-transparent rounded-2xl -z-10"></div> */}
           <h3 className="text-xl font-manrope font-medium">
             {data.features[4].title}
           </h3>
