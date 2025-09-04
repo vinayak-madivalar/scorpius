@@ -8,7 +8,7 @@ import TrustedBy from "@/components/TrustedBy";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <HeroSection />
       <BentoGrid />
       <HowItWorks />

@@ -1,11 +1,20 @@
+"use client";
+
 import { data } from "@/lib/data";
 import Link from "next/link";
 import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
+import { motion } from "motion/react";
 
 const FinalCTA = () => {
   return (
-    <div className="my-16 relative ">
+    <motion.section
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      className="my-16 relative "
+    >
       <div className="absolute inset-0 z-0 rounded-2xl sm:rounded-3xl overflow-hidden pointer-events-none">
         <div className="absolute inset-0 bg-"></div>
         <div
@@ -30,18 +39,22 @@ const FinalCTA = () => {
           </div>
 
           <Link href={data.final_CTA.link}>
-            <button className="group flex items-center gap-1 bg-foreground text-background relative px-10 py-3 border border-neutral-700 cursor-pointer font-medium rounded-full text-base hover:scale-105 transform transition-transform duration-300">
-              <div className="absolute -bottom-px inset-x-0 w-full h-px bg-gradient-to-r from-transparent via-orange-400 to-transparent"></div>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.8 }}
+              className="group flex items-center gap-1 bg-foreground text-background relative px-10 py-3 border border-neutral-700 cursor-pointer font-medium rounded-full text-base hover:scale- transform transition-transform duration-300"
+            >
+              <div className="absolute -bottom-px inset-x-0 w-3/4 h-[2px] bg-gradient-to-r from-transparent via-orange-400 to-transparent mx-auto"></div>
               Start your free trial{" "}
               <FiArrowUpRight
                 size={20}
                 className="group-hover:translate-x-1 transform transition-transform duration-300"
               />
-            </button>
+            </motion.button>
           </Link>
         </div>
       </div>
-    </div>
+    </motion.section>
   );
 };
 

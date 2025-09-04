@@ -1,12 +1,21 @@
+"use client";
+
 import { data } from "@/lib/data";
 import React from "react";
 import Image from "next/image";
 import BadgeButton from "./ui/BadgeButton";
 import { RiFlashlightFill } from "react-icons/ri";
+import { motion } from "motion/react";
 
 const HowItWorks = () => {
   return (
-    <section className="py-16">
+    <motion.section
+      initial={{ opacity: 0, x: -40 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      className="py-16"
+    >
       <div className="flex flex-col items-center justify-center gap-4">
         <BadgeButton label="Quick & Easy" icon={RiFlashlightFill} />
         <div className="flex flex-col justify-center gap-2 items-center mb-10">
@@ -47,7 +56,7 @@ const HowItWorks = () => {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

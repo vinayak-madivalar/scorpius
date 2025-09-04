@@ -1,11 +1,20 @@
+"use client";
+
 import React from "react";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { RiFlashlightFill } from "react-icons/ri";
 import BadgeButton from "./ui/BadgeButton";
+import { motion } from "motion/react";
 
 const Pricing = () => {
   return (
-    <div className="py-14">
+    <motion.section
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="py-16"
+    >
       <div className="flex flex-col justify-center items-center gap-5 mb-14">
         <BadgeButton label="Join us Today" icon={RiFlashlightFill} />
         <div className=" flex flex-col justify-center items-center gap-4">
@@ -135,7 +144,7 @@ const Pricing = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.section>
   );
 };
 

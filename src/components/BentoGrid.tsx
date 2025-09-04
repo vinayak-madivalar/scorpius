@@ -1,11 +1,20 @@
+"use client";
+
 import { data } from "@/lib/data";
 import BadgeButton from "./ui/BadgeButton";
 import { RiFlashlightFill } from "react-icons/ri";
 import Image from "next/image";
+import { easeOut, motion } from "motion/react";
 
 const Bento = () => {
   return (
-    <section className="max-w-6xl mx-auto px-6 py-16">
+    <motion.section
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: easeOut }}
+      className="max-w-6xl mx-auto px-6 py-16"
+    >
       <div className="mx-auto mb-10 max-w-2xl">
         <div className="flex items-center justify-center mb-4">
           <BadgeButton label="Features" icon={RiFlashlightFill} />
@@ -71,7 +80,7 @@ const Bento = () => {
           </p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

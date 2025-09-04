@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 import { RiFlashlightFill } from "react-icons/ri";
 import BadgeButton from "./ui/BadgeButton";
+import { motion } from "motion/react";
 
 interface FaqItem {
   question: string;
@@ -62,7 +63,16 @@ const FAQSection = () => {
   }, [animatingIndex]);
 
   return (
-    <div className="py-14">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+      variants={{
+        hidden: {},
+        visible: { transition: { staggerChildren: 0.2, ease: "easeOut" } },
+      }}
+      className="py-16"
+    >
       <div className="flex flex-col justify-center items-center gap-5 mb-10">
         <BadgeButton label="FAQ" icon={RiFlashlightFill} />
         <div className="flex flex-col justify-center items-center gap-2 px-6 md:px-0">
@@ -82,8 +92,13 @@ const FAQSection = () => {
             const isOpen = activeQuestion === index;
 
             return (
-              <div
+              <motion.div
                 key={index}
+                variants={{
+                  hidden: { opacity: 0, y: 40 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+                transition={{ duration: 0.4 }}
                 className="w-full shadow-md border border-muted cursor-pointer rounded-xl px-6 py-5"
                 onClick={() => {
                   toggleOpen(index);
@@ -118,12 +133,12 @@ const FAQSection = () => {
                     <p>{item.answer}</p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
       </div>
-    </div>
+    </motion.section>
   );
 };
 

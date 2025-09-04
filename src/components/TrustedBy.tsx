@@ -1,10 +1,19 @@
+"use client";
+
 import React from "react";
 import BadgeButton from "./ui/BadgeButton";
 import { RiFlashlightFill } from "react-icons/ri";
+import { motion } from "motion/react";
 
 const TrustedBy = () => {
   return (
-    <div className="py-16">
+    <motion.section
+      initial={{ opacity: 0, x: 40 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      className="py-16"
+    >
       <div className="flex flex-col items-center justify-center gap-4 mb-14">
         <BadgeButton label="Trusted Brands" icon={RiFlashlightFill} />
         <h1 className="text-3xl md:text-5xl font-manrope font-medium tracking-tight text-center">
@@ -207,7 +216,7 @@ const TrustedBy = () => {
           </svg>
         </div>
       </div>
-    </div>
+    </motion.section>
   );
 };
 
