@@ -34,7 +34,11 @@ const HeroSection = () => {
         <div className="flex gap-4">
           <button className="group flex items-center gap-2 bg-foreground text-background relative px-8 py-3 border border-neutral-700 cursor-pointer font-medium rounded-full text-sm hover:-translate-y-1.5 transition duration-200">
             <div className="absolute -bottom-px inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-orange-500 to-transparent w-3/4 mx-auto"></div>
-            {data.hero.cta} <FaArrowRightToBracket size={15} />
+            {data.hero.cta}{" "}
+            <FaArrowRightToBracket
+              size={15}
+              className="group-hover:translate-x-0.5 transform transition-transform duration-300"
+            />
           </button>
         </div>
       </div>
