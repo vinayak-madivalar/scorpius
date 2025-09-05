@@ -26,13 +26,13 @@ const Bento = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-        <div className="relative md:col-span-2 md:row-span-1 rounded-2xl px-6 py-6 shadow-sm border border-neutral-200 dark:border-muted">
+        <div className="relative md:col-span-2 md:row-span-1 rounded-2xl px-6 py-6 border border-neutral-200 dark:border-muted hover:shadow-2xl hover:scale-[102%] transistion-all duration-300 shadow-orange-300">
           <Image
             src="/dashboard.png"
             alt="analytics"
             width={500}
             height={500}
-            className="w-full mb-6"
+            className="w-full mb-6 rounded-2xl"
           />
           <h3 className="text-xl font-manrope font-medium">
             {data.features[0].title}
@@ -42,7 +42,14 @@ const Bento = () => {
           </p>
         </div>
 
-        <div className="relative rounded-2xl p-6 shadow-sm border border-neutral-200 dark:border-muted">
+        <div className="relative rounded-2xl p-6  border border-neutral-200 dark:border-muted hover:shadow-2xl hover:scale-[102%] transistion-all duration-300 shadow-orange-300">
+          <Image
+            src="/collaboration.png"
+            alt="collaboration"
+            width={500}
+            height={500}
+            className="w-full mb-6"
+          />
           <h3 className="text-xl font-manrope font-medium">
             {data.features[1].title}
           </h3>
@@ -51,7 +58,14 @@ const Bento = () => {
           </p>
         </div>
 
-        <div className="relative rounded-2xl p-6 shadow-sm border border-neutral-200 dark:border-muted">
+        <div className="relative rounded-2xl p-6  border border-neutral-200 dark:border-muted hover:shadow-2xl hover:scale-[102%] transistion-all duration-300 shadow-orange-300">
+          <Image
+            src="/social.png"
+            alt="analytics"
+            width={500}
+            height={500}
+            className="w-full mb-6"
+          />
           <h3 className="text-xl font-manrope font-medium">
             {data.features[2].title}
           </h3>
@@ -60,7 +74,14 @@ const Bento = () => {
           </p>
         </div>
 
-        <div className="relative  rounded-2xl p-6 flex flex-col justify-between shadow-sm border border-neutral-200 dark:border-muted">
+        <div className="relative  rounded-2xl p-6 flex flex-col justify-between border border-neutral-200 dark:border-muted hover:shadow-2xl hover:scale-[102%] transistion-all duration-300 shadow-orange-300">
+          <Image
+            src="/schedule.png"
+            alt="analytics"
+            width={500}
+            height={500}
+            className="w-full mb-6"
+          />
           <div>
             <h3 className="text-xl font-manrope font-medium">
               {data.features[3].title}
@@ -71,7 +92,14 @@ const Bento = () => {
           </div>
         </div>
 
-        <div className="relative rounded-2xl p-6 shadow-sm border border-neutral-200 dark:border-muted">
+        <div className="relative rounded-2xl p-6 border border-neutral-200 dark:border-muted hover:shadow-2xl hover:scale-[102%] transistion-all duration-300 shadow-orange-300">
+          <Image
+            src="/listening.png"
+            alt="analytics"
+            width={200}
+            height={500}
+            className="w-full mb-6"
+          />
           <h3 className="text-xl font-manrope font-medium">
             {data.features[4].title}
           </h3>
