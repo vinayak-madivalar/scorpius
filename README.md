@@ -33,6 +33,10 @@ This project is built with Next.js and Tailwind CSS v4 for modern, scalable, and
 - **Typical SaaS based UI** — Typical Saas based UI: Used the typical Saas based ui that actually convert the users into customers.
 - **Theme & Minimal Animations** — Light/dark mode support with subtle transitions and hover states to create interactivity without distracting from content.
 
+## Known Issues
+
+Currently, there are no major known issues. If you encounter any problems, please report them in the issues section of the repository.
+
 ## Contributing
 
 Feel free to fork this project, open issues, and submit pull requests. Contributions are always welcome.
