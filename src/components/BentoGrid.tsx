@@ -26,7 +26,7 @@ const Bento = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-        <div className="relative md:col-span-2 md:row-span-1 rounded-2xl px-6 py-6 border border-neutral-200 dark:border-muted hover:shadow-2xl hover:scale-[102%] transistion-all duration-300 shadow-orange-300">
+        <div className="relative md:col-span-2 md:row-span-1 rounded-2xl px-6 py-6 border border-neutral-200 dark:border-muted">
           <Image
             src="/dashboard.png"
             alt="analytics"
@@ -42,7 +42,7 @@ const Bento = () => {
           </p>
         </div>
 
-        <div className="relative rounded-2xl p-6  border border-neutral-200 dark:border-muted hover:shadow-2xl hover:scale-[102%] transistion-all duration-300 shadow-orange-300">
+        <div className="relative rounded-2xl p-6  border border-neutral-200 dark:border-muted">
           <Image
             src="/collaboration.png"
             alt="collaboration"
@@ -58,7 +58,7 @@ const Bento = () => {
           </p>
         </div>
 
-        <div className="relative rounded-2xl p-6  border border-neutral-200 dark:border-muted hover:shadow-2xl hover:scale-[102%] transistion-all duration-300 shadow-orange-300">
+        <div className="relative rounded-2xl p-6  border border-neutral-200 dark:border-muted">
           <Image
             src="/social.png"
             alt="analytics"
@@ -74,7 +74,7 @@ const Bento = () => {
           </p>
         </div>
 
-        <div className="relative  rounded-2xl p-6 flex flex-col justify-between border border-neutral-200 dark:border-muted hover:shadow-2xl hover:scale-[102%] transistion-all duration-300 shadow-orange-300">
+        <div className="relative  rounded-2xl p-6 flex flex-col justify-between border border-neutral-200 dark:border-muted">
           <Image
             src="/schedule.png"
             alt="analytics"
@@ -92,7 +92,7 @@ const Bento = () => {
           </div>
         </div>
 
-        <div className="relative rounded-2xl p-6 border border-neutral-200 dark:border-muted hover:shadow-2xl hover:scale-[102%] transistion-all duration-300 shadow-orange-300">
+        <div className="relative rounded-2xl p-6 border border-neutral-200 dark:border-muted">
           <Image
             src="/listening.png"
             alt="analytics"
