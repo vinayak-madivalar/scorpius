@@ -69,7 +69,7 @@ const Pricing = () => {
           </div>
 
           {/* Professional Plan */}
-          <div className="border-2 max-w-xs md:max-w-fit border-muted rounded-2xl p-6 shadow-md lg:scale-105 flex flex-col relative z-10">
+          <div className="border-2 max-w-xs md:max-w-fit border-muted rounded-2xl p-6 shadow-md lg:scale-105 flex flex-col relative z-10 ">
             <div className="absolute top-0 right-0 w-full h-60 overflow-hidden bg-gradient-to-bl from-orange-300/40 from-5% via-transparent to-transparent rounded-2xl -z-10"></div>
             <h3 className="flex items-center gap-4 text-lg font-manrope font-medium mt-4 mb-6">
               Professional Plan{" "}

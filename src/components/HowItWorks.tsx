@@ -33,7 +33,7 @@ const HowItWorks = () => {
           {data.howItWorks.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-start max-w-xl py-4 px-6 border border-muted rounded-2xl shadow-md"
+              className="flex flex-col items-start max-w-xl py-4 px-6 border border-muted rounded-2xl shadow-md bg-foreground/5"
             >
               <div className="pt-6">
                 <Image
