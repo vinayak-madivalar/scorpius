@@ -12,29 +12,29 @@ export const data = {
   },
   features: [
     {
+      title: "Smart Scheduling",
+      description:
+        "Schedule posts across platforms using intelligent timing suggestions to significantly boost both reach and engagement.",
+    },
+    {
       title: "Advanced analytics",
       description:
-        "Get deep insights with visual reports to optimize campaigns and prove ROI.",
+        "Track engagement, reach, and performance with in-depth analytics and visual reports.",
     },
     {
       title: "Team Collaboration",
       description:
-        "Work together with roles, approvals, and an organized workflow.",
-    },
-    {
-      title: "Multi-Platform Publishing",
-      description:
-        "Post to Facebook, Instagram, Twitter, LinkedIn, and more from one place.",
-    },
-    {
-      title: "Smart Scheduling",
-      description:
-        "Plan posts with AI timing suggestions to maximize reach and engagement.",
+        "Streamline team workflows with clear role assignments and a built-in approval system, ensuring every project stays organized and on track.",
     },
     {
       title: "Social Listening",
       description:
-        "Track mentions and conversations in real time to engage faster.",
+        "Monitor mentions, comments, and conversations about your brand in real time. Stay connected, respond faster, and never miss an opportunity to engage.",
+    },
+    {
+      title: "Multi-Platform Publishing",
+      description:
+        "Publish content across Facebook, Instagram, Twitter, LinkedIn, and more. Save time by managing everything in one place.",
     },
   ],
 
